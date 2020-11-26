@@ -22,5 +22,8 @@ class TestTask(unittest.TestCase):
 
     def test_cook_dinner_preferred_over_clean_windows(self):
         self.assertEqual(self.task_2, get_preferred_option(self.task_2, self.task_3))
-        
+
     # - "Clean Windows is preferred over "Wash Dishes"
+    
+    def test_clean_windows_preferred_over_wash_dishes(self):
+        self.assertEqual(self.task_3, get_preferred_option(self.task_3, self.task_1))
